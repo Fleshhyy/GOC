@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GOC Ops Portal · Arizona Unit</title>
+  <meta name="description" content="GOC — Operational portal for our Discord detachment in Arizona: intel drops, incident board, recruitment, and rules." />
+  <meta property="og:title" content="GOC Ops Portal · Arizona Unit" />
+  <meta property="og:description" content="Operational portal for our Discord detachment in Arizona: intel, incidents, recruitment, and rules." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0c">
+  <!-- Tailwind via CDN (swap to compiled for production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0b0b0c', steel: '#161618',
+            blood: { 500: '#dc2626', 600: '#b91c1c' }
+          },
+          fontFamily: { ui: ['Inter','system-ui','Segoe UI','Roboto','Helvetica','Arial','sans-serif'] },
+          boxShadow: { glow: '0 0 24px rgba(220,38,38,0.25)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    .grid-bg{background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px);background-size:44px 44px}
+    .hero-shine{background: radial-gradient(800px 300px at 50% 0%, rgba(220,38,38,.15), transparent 60%)}
+  </style>
+</head>
+<body class="bg-obsidian text-zinc-200 font-ui selection:bg-blood-600 selection:text-white" id="top">
+  <!-- Top Ribbon -->
+  <div class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-zinc-800/80 bg-steel/70">
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-blood-600/20 border border-blood-600/40">
+          <span class="block w-2 h-2 bg-blood-500 rounded-full shadow-glow"></span>
+        </span>
+        <div>
+          <div class="text-zinc-100 font-semibold leading-tight tracking-wide">GOC · Arizona Unit</div>
+          <div class="text-[11px] text-zinc-400 -mt-0.5">Discord Detachment — Arizona (fan/roleplay)</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#mission" class="hover:text-white">Mission</a>
+        <a href="#intel" class="hover:text-white">Intel</a>
+        <a href="#incidents" class="hover:text-white">Incidents</a>
+        <a href="#recruit" class="hover:text-white">Recruit</a>
+        <a href="#rules" class="hover:text-white">Rules</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="https://discord.gg/your-invite" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30 transition">
+        Join Discord
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="2" d="M7 7h10M7 12h7M7 17h10"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="pt-28 md:pt-32 pb-16 hero-shine border-b border-zinc-800 grid-bg">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-bold text-zinc-100">Global Occult Coalition — Arizona Unit</h1>
+      <p class="mt-3 max-w-2xl text-zinc-300">Operational portal for the Arizona detachment. Intel drops, incident tracking, recruitment, and rules for our Discord-based unit.</p>
+      <div class="mt-6 flex flex-wrap items-center gap-3 text-xs">
+        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">AO: Arizona (AZ)</span>
+        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">Timezone: America/Phoenix</span>
+        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">Comms: Discord</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <section id="mission" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Mission</h2>
+        <p class="mt-3 text-zinc-300 max-w-3xl">Contain rumor, codify intel, coordinate ops. This portal centralizes our Arizona unit procedures and announcements. We operate with discipline: clarity over chaos, evidence over ego.</p>
+      </div>
+    </section>
+
+    <section id="intel" class="py-16 md:py-24 border-t border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Intel Drops</h2>
+        <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
+            <h3 class="font-semibold text-zinc-100">[AZ-INT-001] Orientation Packet</h3>
+            <p class="mt-2 text-sm text-zinc-400">Welcome brief, call-signs, radio etiquette, and Discord channel map for Arizona detachment.</p>
+            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
+          </article>
+          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
+            <h3 class="font-semibold text-zinc-100">[AZ-INT-002] Local SOPs</h3>
+            <p class="mt-2 text-sm text-zinc-400">Engagement rules, escalation ladder, and event scheduling for Arizona operations.</p>
+            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
+          </article>
+          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
+            <h3 class="font-semibold text-zinc-100">[AZ-INT-003] AO Map</h3>
+            <p class="mt-2 text-sm text-zinc-400">Arizona region overview: hubs, meet spots, and digital ops boundaries.</p>
+            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="incidents" class="py-16 md:py-24 border-t border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Incident Board</h2>
+        <div class="mt-4 text-sm text-zinc-400">Post brief, neutral summaries. No doxxing, no real-world targeting. Fan/roleplay context only.</div>
+        <div class="mt-6 grid gap-4">
+          <div class="p-4 rounded-xl border border-zinc-800 bg-zinc-950/60">
+            <div class="text-xs text-zinc-400">[AZ-INC-2025-001] · Status: Open</div>
+            <div class="font-semibold text-zinc-100">Discord raid attempt — mitigated</div>
+            <p class="text-sm text-zinc-400 mt-1">Auto-moderation triggered; roles locked; report archived. Review SOP-RAID-02.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recruit" class="py-16 md:py-24 border-t border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Recruitment</h2>
+        <p class="mt-3 text-zinc-300 max-w-3xl">Arizona applicants only at this time. Must be 13+ and follow Discord ToS. Experience with Roblox/Unity scripting is a plus, but discipline matters more.</p>
+        <form class="mt-6 grid md:grid-cols-3 gap-4" onsubmit="event.preventDefault(); alert('Submitted. We will review.');">
+          <input required placeholder="Call-sign" class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80"/>
+          <input required placeholder="Discord tag (e.g., name#1234)" class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80"/>
+          <select class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80">
+            <option>Role interest</option>
+            <option>Operator</option>
+            <option>Builder</option>
+            <option>Scripter</option>
+            <option>Moderator</option>
+          </select>
+          <textarea placeholder="Why Arizona Unit?" class="md:col-span-3 px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80" rows="4"></textarea>
+          <button class="md:col-span-3 justify-self-start text-sm px-4 py-2 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="rules" class="py-16 md:py-24 border-t border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Rules (Condensed)</h2>
+        <ol class="mt-4 space-y-3 text-zinc-300 list-decimal list-inside">
+          <li>Follow Discord ToS. Age 13+.</li>
+          <li>Respect above all. No harassment, slurs, or raids.</li>
+          <li>Keep intel neutral; no IRL targeting. Fan/roleplay only.</li>
+          <li>Post in correct channels; obey staff directives.</li>
+          <li>No NSFW/gore/piracy/illegal content. Instant ban.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 border-t border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Contact</h2>
+        <div class="mt-3 grid md:grid-cols-3 gap-6 text-sm text-zinc-300">
+          <div>
+            <div class="text-zinc-400">Region</div>
+            <div class="font-semibold">Arizona (AZ)</div>
+          </div>
+          <div>
+            <div class="text-zinc-400">Comms</div>
+            <a class="font-semibold hover:text-white" href="https://discord.gg/Zu4C4Jexuh" target="_blank">Discord Invite</a>
+          </div>
+          <div>
+            <div class="text-zinc-400">Timezone</div>
+            <div class="font-semibold">America/Phoenix</div>
+          </div>
+        </div>
+        <p class="mt-6 text-xs text-zinc-500">This is a fan/roleplay portal inspired by the GOC concept. No real-world vigilantism, threats, or harassment. Keep it fictional. Keep it safe.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-800/80 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-xs text-zinc-500 flex flex-wrap items-center justify-between gap-4">
+      <div>© <span id="yr"></span> GOC · Arizona Unit — Discord Detachment</div>
+      <a href="#top" class="hover:text-zinc-400">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+</body>
+</html>
