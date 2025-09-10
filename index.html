@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GOC Ops Portal · Arizona Unit</title>
-  <meta name="description" content="GOC — Operational portal for our Discord detachment in Arizona: intel drops, incident board, recruitment, and rules." />
+  <meta name="description" content="GOC — Operational portal for our Discord detachment in Arizona: roles, applications, intel, incidents, recruitment, rules, and lore." />
   <meta property="og:title" content="GOC Ops Portal · Arizona Unit" />
-  <meta property="og:description" content="Operational portal for our Discord detachment in Arizona: intel, incidents, recruitment, and rules." />
+  <meta property="og:description" content="Operational portal for our Discord detachment in Arizona: roles, applications, intel, incidents, recruitment, rules, and lore." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0b0b0c">
-  <!-- Tailwind via CDN (swap to compiled for production) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -25,13 +24,9 @@
       }
     }
   </script>
-  <style>
-    .grid-bg{background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px);background-size:44px 44px}
-    .hero-shine{background: radial-gradient(800px 300px at 50% 0%, rgba(220,38,38,.15), transparent 60%)}
-  </style>
 </head>
-<body class="bg-obsidian text-zinc-200 font-ui selection:bg-blood-600 selection:text-white" id="top">
-  <!-- Top Ribbon -->
+<body class="bg-obsidian text-zinc-200 font-ui" id="top">
+  <!-- Header -->
   <div class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-zinc-800/80 bg-steel/70">
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="#top" class="flex items-center gap-3 group">
@@ -40,7 +35,7 @@
         </span>
         <div>
           <div class="text-zinc-100 font-semibold leading-tight tracking-wide">GOC · Arizona Unit</div>
-          <div class="text-[11px] text-zinc-400 -mt-0.5">Discord Detachment — Arizona (fan/roleplay)</div>
+          <div class="text-[11px] text-zinc-400 -mt-0.5">Global Occult Coalition — Discord Detachment</div>
         </div>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -49,105 +44,109 @@
         <a href="#incidents" class="hover:text-white">Incidents</a>
         <a href="#recruit" class="hover:text-white">Recruit</a>
         <a href="#rules" class="hover:text-white">Rules</a>
-        <a href="#lore" class="hover:text-white">Lore</a>
+        <a href="#roles" class="hover:text-white">Roles</a>
+        <a href="#apply" class="hover:text-white">Apply</a>
         <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="https://villains.fandom.com/wiki/Global_Occult_Coalition" target="_blank" class="hover:text-white">Lore</a>
       </nav>
       <a href="https://discord.gg/Zu4C4Jexuh" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30 transition">
         Join Discord
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="2" d="M7 7h10M7 12h7M7 17h10"/></svg>
       </a>
     </div>
   </div>
 
-  <!-- Hero -->
-  <header class="pt-28 md:pt-32 pb-16 hero-shine border-b border-zinc-800 grid-bg">
+  <header class="pt-28 md:pt-32 pb-16 border-b border-zinc-800 grid-bg">
     <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl md:text-5xl font-bold text-zinc-100">Global Occult Coalition — Arizona Unit <span class="text-sm align-super tracking-widest text-z
-      <p class="mt-3 max-w-2xl text-zinc-300">Operational portal for the Arizona detachment. Intel drops, incident tracking, recruitment, and rules for our Discord-based unit.</p>
-      <div class="mt-6 flex flex-wrap items-center gap-3 text-xs">
-        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">AO: Arizona (AZ)</span>
-        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">Timezone: America/Phoenix</span>
-        <span class="px-3 py-1 rounded-full border border-zinc-700/70 bg-zinc-900/60">Comms: Discord</span>
-      </div>
+      <h1 class="text-3xl md:text-5xl font-bold text-zinc-100">Global Occult Coalition — Arizona Unit</h1>
+      <p class="mt-3 max-w-2xl text-zinc-300">Roles, applications, intel, rules, and lore for the Arizona detachment. Rooted in GOC structure, adapted for Discord operations.</p>
     </div>
   </header>
 
-  <!-- Sections -->
   <main>
     <section id="mission" class="py-16 md:py-24">
       <div class="max-w-7xl mx-auto px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Mission</h2>
-        <p class="mt-3 text-zinc-300 max-w-3xl">Contain rumor, codify intel, coordinate ops. This portal centralizes our Arizona unit procedures and announcements. We operate with discipline: clarity over chaos, evidence over ego.</p>
+        <p class="mt-3 text-zinc-300 max-w-3xl">Observe, interdict, sanitize. Arizona Unit codifies intel, coordinates operations, and keeps RP grounded and safe under Discord ToS.</p>
       </div>
     </section>
 
-    <section id="intel" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <section id="roles" class="py-16 md:py-24 border-t border-zinc-800/80">
       <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Intel Drops</h2>
-        <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
-            <h3 class="font-semibold text-zinc-100">[AZ-INT-001] Orientation Packet</h3>
-            <p class="mt-2 text-sm text-zinc-400">Welcome brief, call-signs, radio etiquette, and Discord channel map for Arizona detachment.</p>
-            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
-          </article>
-          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
-            <h3 class="font-semibold text-zinc-100">[AZ-INT-002] Local SOPs</h3>
-            <p class="mt-2 text-sm text-zinc-400">Engagement rules, escalation ladder, and event scheduling for Arizona operations.</p>
-            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
-          </article>
-          <article class="p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60">
-            <h3 class="font-semibold text-zinc-100">[AZ-INT-003] AO Map</h3>
-            <p class="mt-2 text-sm text-zinc-400">Arizona region overview: hubs, meet spots, and digital ops boundaries.</p>
-            <button class="mt-3 text-xs px-3 py-1.5 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Open</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="incidents" class="py-16 md:py-24 border-t border-zinc-800/80">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Incident Board</h2>
-        <div class="mt-4 text-sm text-zinc-400">Post brief, neutral summaries. No doxxing, no real-world targeting. Fan/roleplay context only.</div>
-        <div class="mt-6 grid gap-4">
-          <div class="p-4 rounded-xl border border-zinc-800 bg-zinc-950/60">
-            <div class="text-xs text-zinc-400">[AZ-INC-2025-001] · Status: Open</div>
-            <div class="font-semibold text-zinc-100">Discord raid attempt — mitigated</div>
-            <p class="text-sm text-zinc-400 mt-1">Auto-moderation triggered; roles locked; report archived. Review SOP-RAID-02.</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Structure & Roles</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-8 text-zinc-300">
+          <div>
+            <h3 class="font-semibold text-zinc-100">⚔️ Command</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><strong>@Director-General</strong> – founders, supreme authority.</li>
+              <li><strong>@Deputy Director</strong> – second-in-command.</li>
+              <li><strong>@Council Liaison</strong> – ceremonial “Council of 108” connection.</li>
+            </ul>
+            <h3 class="mt-6 font-semibold text-zinc-100">🛡️ Operations</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><strong>@High Command</strong> – senior staff, branch heads.</li>
+              <li><strong>@Commander</strong> – leads divisions (Combat, Research, Intel).</li>
+              <li><strong>@Officer</strong> – moderators, enforcement.</li>
+              <li><strong>@Agent</strong> – trusted field operatives.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-zinc-100">📚 Support & Lore</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><strong>@Research Division</strong> – lore, SCP/GOC canon keepers.</li>
+              <li><strong>@Tech Division</strong> – bot + script maintainers.</li>
+              <li><strong>@Logistics</strong> – events, recruitment, internal support.</li>
+            </ul>
+            <h3 class="mt-6 font-semibold text-zinc-100">🌑 Community</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><strong>@Recruit</strong> – new members (probation).</li>
+              <li><strong>@Operative</strong> – standard members after vetting.</li>
+              <li><strong>@Veteran</strong> – long-term, recognized members.</li>
+              <li><strong>@Civilian</strong> – guests/supporters outside RP chain.</li>
+            </ul>
+            <h3 class="mt-6 font-semibold text-zinc-100">🕯️ Optional Flavor (RP / events)</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><strong>@Strike Team ST-[#]</strong> – specialized task forces.</li>
+              <li><strong>@Consultant</strong> – allies from other groups.</li>
+              <li><strong>@Observer</strong> – external SCP Foundation / O5 flavor role.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="recruit" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <section id="rules" class="py-16 md:py-24 border-t border-zinc-800/80">
       <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Recruitment</h2>
-        <p class="mt-3 text-zinc-300 max-w-3xl">Arizona applicants only at this time. Must be 13+ and follow Discord ToS. Experience with Roblox/Unity scripting is a plus, but discipline matters more.</p>
-        <form class="mt-6 grid md:grid-cols-3 gap-4" onsubmit="event.preventDefault(); alert('Submitted. We will review.');">
-          <input required placeholder="Call-sign" class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80"/>
-          <input required placeholder="Discord tag (e.g., name#1234)" class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80"/>
-          <select class="px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80">
-            <option>Role interest</option>
-            <option>Operator</option>
-            <option>Builder</option>
-            <option>Scripter</option>
-            <option>Moderator</option>
-          </select>
-          <textarea placeholder="Why Arizona Unit?" class="md:col-span-3 px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800 outline-none focus:border-blood-600/80" rows="4"></textarea>
-          <button class="md:col-span-3 justify-self-start text-sm px-4 py-2 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Submit</button>
-        </form>
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Rules</h2>
+        <ol class="mt-4 space-y-3 text-zinc-300 list-decimal list-inside text-sm">
+          <li><strong>Follow Discord ToS & Age Requirement</strong> — You must be 13+ and follow Discord’s Terms of Service and Community Guidelines. No exceptions.</li>
+          <li><strong>Respect Above All</strong> — No harassment, slurs, or personal attacks. Keep debates civil. Disrespect = consequences.</li>
+          <li><strong>Channel Discipline</strong> — Post in the right channel. Keep spam, memes, or off-topic content in their zones.</li>
+          <li><strong>Zero Tolerance Content</strong> — 🚫 No NSFW, gore, piracy, or illegal activity. Instant ban for violations.</li>
+          <li><strong>No Spam or Raids</strong> — Don’t mass ping. Don’t flood chat, soundboards, or VC.</li>
+          <li><strong>Chain of Command</strong> — Respect staff and High Command. Appeals go through proper channels.</li>
+          <li><strong>Roleplay Separation</strong> — Stay IC in RP channels. OOC talk belongs in OOC spaces.</li>
+          <li><strong>Represent the GOC Professionally</strong> — No trolling, impersonation, or behavior that damages the group’s image.</li>
+          <li><strong>Information Security</strong> — Do not leak private server info, docs, or member details. Protect your identity and the Coalition.</li>
+          <li><strong>Zero Strike Policy</strong> — Hate speech, threats, doxxing, or raids = immediate removal.</li>
+        </ol>
       </div>
     </section>
 
-    <section id="rules" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <section id="apply" class="py-16 md:py-24 border-t border-zinc-800/80">
       <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Rules (Condensed)</h2>
-        <ol class="mt-4 space-y-3 text-zinc-300 list-decimal list-inside">
-          <li>Follow Discord ToS. Age 13+.</li>
-          <li>Respect above all. No harassment, slurs, or raids.</li>
-          <li>Keep intel neutral; no IRL targeting. Fan/roleplay only.</li>
-          <li>Post in correct channels; obey staff directives.</li>
-          <li>No NSFW/gore/piracy/illegal content. Instant ban.</li>
-        </ol>
+        <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Applications</h2>
+        <div class="mt-4 grid md:grid-cols-2 gap-6">
+          <a href="https://applicationbot.xyz/form/a5b5dc" target="_blank" class="block p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60 hover:border-red-600/50 transition">
+            <div class="text-sm text-zinc-400">Application</div>
+            <div class="mt-1 font-semibold text-zinc-100">Roles Application</div>
+            <p class="mt-1 text-sm text-zinc-400">Submit for Recruit/Operative/Veteran or support divisions.</p>
+          </a>
+          <a href="https://applicationbot.xyz/form/aa33ea" target="_blank" class="block p-5 rounded-2xl border border-zinc-800 bg-zinc-950/60 hover:border-red-600/50 transition">
+            <div class="text-sm text-zinc-400">Application</div>
+            <div class="mt-1 font-semibold text-zinc-100">Moderator Application</div>
+            <p class="mt-1 text-sm text-zinc-400">Apply for Officer/Moderator. Experience and discretion required.</p>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -168,15 +167,104 @@
             <div class="font-semibold">America/Phoenix</div>
           </div>
         </div>
-        <p class="mt-6 text-xs text-zinc-500">This is a fan/roleplay portal inspired by the GOC concept. No real-world vigilantism, threats, or harassment. Keep it fictional. Keep it safe.</p>
+        <p class="mt-6 text-xs text-zinc-500">This is a fan/roleplay portal inspired by the GOC concept. It is not affiliated with or endorsed by any rights holder. Keep it fictional. Keep it safe.</p>
       </div>
     </section>
   </main>
 
+
+  <!-- Roles -->
+  <section id="roles" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Roles</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm text-zinc-300">
+        <div>
+          <h3 class="font-semibold text-zinc-100 mb-2">⚔️ Command</h3>
+          <ul class="space-y-1">
+            <li>@Director-General – founders, supreme authority.</li>
+            <li>@Deputy Director – second-in-command.</li>
+            <li>@Council Liaison – ceremonial “Council of 108” connection.</li>
+          </ul>
+          <h3 class="font-semibold text-zinc-100 mt-4 mb-2">🛡️ Operations</h3>
+          <ul class="space-y-1">
+            <li>@High Command – senior staff, branch heads.</li>
+            <li>@Commander – leads divisions (Combat, Research, Intel).</li>
+            <li>@Officer – moderators, enforcement.</li>
+            <li>@Agent – trusted field operatives.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-zinc-100 mb-2">📚 Support & Lore</h3>
+          <ul class="space-y-1">
+            <li>@Research Division – lore, SCP/GOC canon keepers.</li>
+            <li>@Tech Division – bot + script maintainers.</li>
+            <li>@Logistics – events, recruitment, internal support.</li>
+          </ul>
+          <h3 class="font-semibold text-zinc-100 mt-4 mb-2">🌑 Community</h3>
+          <ul class="space-y-1">
+            <li>@Recruit – new members (probation).</li>
+            <li>@Operative – vetted members.</li>
+            <li>@Veteran – long-term recognized.</li>
+            <li>@Civilian – guests/supporters.</li>
+          </ul>
+          <h3 class="font-semibold text-zinc-100 mt-4 mb-2">🕯️ Optional Flavor</h3>
+          <ul class="space-y-1">
+            <li>@Strike Team ST-[#] – specialized task forces.</li>
+            <li>@Consultant – allied groups.</li>
+            <li>@Observer – external SCP/O5 flavor.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section id="applications" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Applications</h2>
+      <p class="mt-3 text-zinc-300">Use the links below to apply for specific roles:</p>
+      <ul class="mt-4 space-y-2 text-sm text-blood-500">
+        <li><a href="https://applicationbot.xyz/form/a5b5dc" target="_blank" class="underline hover:text-blood-600">Roles Application Form</a></li>
+        <li><a href="https://applicationbot.xyz/form/aa33ea" target="_blank" class="underline hover:text-blood-600">Moderator Application Form</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rules -->
+  <section id="rules" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Rules</h2>
+      <ol class="mt-4 space-y-3 text-zinc-300 list-decimal list-inside">
+        <li>Follow Discord ToS & Age Requirement (13+).</li>
+        <li>Respect above all. No harassment, slurs, or personal attacks.</li>
+        <li>Channel discipline: post in correct channels.</li>
+        <li>Zero tolerance: no NSFW, gore, piracy, or illegal activity.</li>
+        <li>No spam or raids; no mass pings.</li>
+        <li>Chain of Command: respect staff decisions; appeals in proper channels.</li>
+        <li>Roleplay separation: stay IC in RP channels.</li>
+        <li>Represent the GOC professionally; no trolling/impersonation.</li>
+        <li>Information security: no leaks of server info or member details.</li>
+        <li>Zero Strike Policy: hate speech, threats, doxxing = immediate removal.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-zinc-100">Contact</h2>
+      <p class="mt-3 text-zinc-300">Primary comms through our Discord server.</p>
+      <a href="https://discord.gg/Zu4C4Jexuh" target="_blank" class="inline-block mt-4 px-4 py-2 rounded-lg border border-blood-600/60 bg-blood-600/20 hover:bg-blood-600/30">Join Discord</a>
+    </div>
+  </section>
+
   <footer class="border-t border-zinc-800/80 py-10">
     <div class="max-w-7xl mx-auto px-4 text-xs text-zinc-500 flex flex-wrap items-center justify-between gap-4">
       <div>© <span id="yr"></span> GOC · Arizona Unit — Discord Detachment</div>
-      <a href="#top" class="hover:text-zinc-400">Back to top ↑</a>
+      <div class="flex gap-4">
+        <a href="https://villains.fandom.com/wiki/Global_Occult_Coalition" target="_blank" class="hover:text-zinc-400">Lore</a>
+        <a href="#top" class="hover:text-zinc-400">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
